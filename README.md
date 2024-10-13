@@ -13,6 +13,7 @@ O sistema deve permitir que, ao encerrar uma consulta, o médico registre a rece
 
 ### Resultado Esperado
 
+<img src="PrimeiraMigracao/Diagrama ER Hospital.drawio.png" style="width: 100%" alt="Primeira Migração de Dados">
 
 ## 2. Migração de Internações
 
