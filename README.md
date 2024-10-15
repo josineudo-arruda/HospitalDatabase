@@ -34,21 +34,21 @@ A internação, obviamente, é vinculada a um paciente – que pode se internar 
 ```
 CREATE TABLE IF NOT EXISTS Paciente(
 	cpf INTEGER PRIMARY KEY NOT NULL,
-    nome Varchar(80) Not NULL,
-    rg Varchar(10) NOT NULL,
-    data_nascimento DATE NOT NULL,
-    email Varchar(80) NOT NULL,
-    telefone Varchar(11) NOT NULL,
-    endereco Varchar(100) NOT NULL, 
-    convenio INT,
-    FOREIGN KEY (convenio) REFERENCES Convenio(id)
+	nome Varchar(80) Not NULL,
+	rg Varchar(10) NOT NULL,
+	data_nascimento DATE NOT NULL,
+	email Varchar(80) NOT NULL,
+	telefone Varchar(11) NOT NULL,
+	endereco Varchar(100) NOT NULL, 
+	convenio INT,
+	FOREIGN KEY (convenio) REFERENCES Convenio(id)
 );
 
 CREATE TABLE IF NOT EXISTS  Convenio (
 	id INTEGER PRIMARY KEY NOT NULL,
-    nome Varchar(80) NOT NULL, 
-    cpnj Varchar(14) NOT NULL,
-    tempo_carencia INTEGER NOT NULL
+	nome Varchar(80) NOT NULL, 
+	cpnj Varchar(14) NOT NULL,
+	tempo_carencia INTEGER NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS Medico (
@@ -62,8 +62,8 @@ CREATE TABLE IF NOT EXISTS Medico (
 );
   
  CREATE TABLE IF NOT EXISTS Especialidade (
-    id SERIAL PRIMARY KEY,
-    nome Varchar(80) NOT NULL
+	id SERIAL PRIMARY KEY,
+	nome Varchar(80) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS Consulta (
