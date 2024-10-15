@@ -30,7 +30,8 @@ A internação, obviamente, é vinculada a um paciente – que pode se internar 
 <img src="SegundaMigracao/Diagrama-MER-Hospital.png" style="width: 100%" alt="Segunda Migração de Dados">
 
 <h4>Código:</h4></br>
-´´´
+
+```
 CREATE TABLE IF NOT EXISTS Paciente(
 	cpf INTEGER PRIMARY KEY NOT NULL,
     nome Varchar(80) Not NULL,
@@ -112,4 +113,4 @@ CREATE TABLE IF NOT EXISTS TipoQuarto (
   	descricao TEXT,
   	valor_diaria DOUBLE not NULL DEFAULT 0.00
 );
-´´´
+```
