@@ -114,17 +114,20 @@ CREATE TABLE IF NOT EXISTS TipoQuarto (
   	valor_diaria DOUBLE not NULL DEFAULT 0.00
 );
 ```
+<h4>Imagens</h4>
+<br>
 
-<h4>Imagens</h4></br>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+  <img src='SegundaMigracao/Imagens/Paciente.png' style='width: 100%;'>
+  <img src='SegundaMigracao/Imagens/Consulta.png' style='width: 100%;'>
+  <img src='SegundaMigracao/Imagens/Convenio.png' style='width: 100%;'>
+  <img src='SegundaMigracao/Imagens/Enfermeiro.png' style='width: 100%;'>
+  <img src='SegundaMigracao/Imagens/Especialidade.png' style='width: 100%;'>
+  <img src='SegundaMigracao/Imagens/Internacao.png' style='width: 100%;'>
+  <img src='SegundaMigracao/Imagens/Medico.png' style='width: 100%;'>
+  <img src='SegundaMigracao/Imagens/Quarto.png' style='width: 100%;'>
+  <img src='SegundaMigracao/Imagens/TipoQuarto.png' style='width: 100%;'>
+</div>
 
-<img src='SegundaMigracao/Imagens/Paciente.png' >
-<img src='SegundaMigracao/Imagens/Consulta.png' >
-<img src='SegundaMigracao/Imagens/Convenio.png' >
-<img src='SegundaMigracao/Imagens/Enfermeiro.png' >
-<img src='SegundaMigracao/Imagens/Especialidade.png' >
-<img src='SegundaMigracao/Imagens/Internação.png' >
-<img src='SegundaMigracao/Imagens/Medico.png' >
-<img src='SegundaMigracao/Imagens/Quarto.png' >
-<img src='SegundaMigracao/Imagens/TipoQuarto.png' >
 
 
