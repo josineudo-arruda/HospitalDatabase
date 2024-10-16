@@ -113,3 +113,15 @@ CREATE TABLE IF NOT EXISTS TipoQuarto (
   	valor_diaria DOUBLE not NULL DEFAULT 0.00
 );
 ´´´
+
+<h4>Imagens</h4></br>
+
+<img src='SegundaMigracao/Imagens/Paciente.png' style='width: 100%;'>
+<img src='SegundaMigracao/Imagens/Consulta.png' style='width: 100%;'>
+<img src='SegundaMigracao/Imagens/Convenio.png' style='width: 100%;'>
+<img src='SegundaMigracao/Imagens/Enfermeiro.png' style='width: 100%;'>
+<img src='SegundaMigracao/Imagens/Especialidade.png' style='width: 100%;'>
+<img src='SegundaMigracao/Imagens/Internacao.png' style='width: 100%;'>
+<img src='SegundaMigracao/Imagens/Medico.png' style='width: 100%;'>
+<img src='SegundaMigracao/Imagens/Quarto.png' style='width: 100%;'>
+<img src='SegundaMigracao/Imagens/TipoQuarto.png' style='width: 100%;'>
