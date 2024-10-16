@@ -122,7 +122,7 @@ CREATE TABLE IF NOT EXISTS TipoQuarto (
 <img src='SegundaMigracao/Imagens/Convenio.png' >
 <img src='SegundaMigracao/Imagens/Enfermeiro.png' >
 <img src='SegundaMigracao/Imagens/Especialidade.png' >
-<img src='SegundaMigracao/Imagens/Internacao.png' >
+<img src='SegundaMigracao/Imagens/Internação.png' >
 <img src='SegundaMigracao/Imagens/Medico.png' >
 <img src='SegundaMigracao/Imagens/Quarto.png' >
 <img src='SegundaMigracao/Imagens/TipoQuarto.png' >
