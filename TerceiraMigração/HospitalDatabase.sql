@@ -1,19 +1,4 @@
-# Hospital Database
 
-Bem-vindo ao centro de organização da migração dos dados do Hospital Albert Einstein para o banco de dados. A seguir, estão as etapas seguidas no processo de migração dos dados, com detalhes de cada fase.
-
-## 1. Migração Inicial
-
-<img src="PrimeiraMigracao/Driagrama-ER-Hospital.png" style="width: 100%" alt="Primeira Migração de Dados">
-
-## 2. Migração de Internações
-
-<img src="SegundaMigracao/Diagrama-MER-Hospital.png" style="width: 100%" alt="Segunda Migração de Dados">
-
-## 3. Terceira Migração
-
-<img src="TerceiraMigracao/Diagrama-MER-Hospital.png" style="width: 100%" alt="Terceira Migração de Dados">
-```
 DROP DATABASE IF EXISTS Hospital;
 CREATE DATABASE IF NOT EXISTS Hospital;
 USE Hospital;
@@ -237,5 +222,9 @@ VALUES ('2023-09-20', '2023-12-25','Cirurgia para retirar retina.', 1,'555444','
 ('2022-02-10', '2022-03-15', 'Internação para desidratação.', 3, '555444', '38Q91R'),
 ('2022-03-05', '2022-04-10', 'Avaliação cardíaca.', 2, '678345', '47Q397'),
 ('2022-04-01', '2022-05-05', 'Recuperação pós-cirúrgica.', 4, '839102', '362R49');
-```
+
+SELECT * FROM Paciente;
+SELECT * FROM Associacao_Medico_Especialidade;
+
+
 

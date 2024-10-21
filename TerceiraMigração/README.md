@@ -1,18 +1,35 @@
-# Hospital Database
+## HOSPITAL DATABASE
 
-Bem-vindo ao centro de organização da migração dos dados do Hospital Albert Einstein para o banco de dados. A seguir, estão as etapas seguidas no processo de migração dos dados, com detalhes de cada fase.
+<h4>Solicitação Cliente</h4>
+Inclua ao menos dez médicos de diferentes especialidades.
 
-## 1. Migração Inicial
+Ao menos sete especialidades (considere a afirmação de que “entre as especialidades há pediatria, clínica geral, gastrenterologia e dermatologia”).
 
-<img src="PrimeiraMigracao/Driagrama-ER-Hospital.png" style="width: 100%" alt="Primeira Migração de Dados">
+Inclua ao menos 15 pacientes.
 
-## 2. Migração de Internações
+Registre 20 consultas de diferentes pacientes e diferentes médicos (alguns pacientes realizam mais que uma consulta). As consultas devem ter ocorrido entre 01/01/2015 e 01/01/2022. Ao menos dez consultas devem ter receituário com dois ou mais medicamentos.
 
-<img src="SegundaMigracao/Diagrama-MER-Hospital.png" style="width: 100%" alt="Segunda Migração de Dados">
+Inclua ao menos quatro convênios médicos, associe ao menos cinco pacientes e cinco consultas.
 
-## 3. Terceira Migração
+Criar entidade de relacionamento entre médico e especialidade. 
 
-<img src="TerceiraMigracao/Diagrama-MER-Hospital.png" style="width: 100%" alt="Terceira Migração de Dados">
+Criar Entidade de Relacionamento entre internação e enfermeiro. 
+
+Arrumar a chave estrangeira do relacionamento entre convênio e médico.
+
+Criar entidade entre internação e enfermeiro.
+
+Colocar chaves estrangeira dentro da internação (Chaves Médico e Paciente).
+
+Registre ao menos sete internações. Pelo menos dois pacientes devem ter se internado mais de uma vez. Ao menos três quartos devem ser cadastrados. As internações devem ter ocorrido entre 01/01/2015 e 01/01/2022.
+
+Considerando que “a princípio o hospital trabalha com apartamentos, quartos duplos e enfermaria”, inclua ao menos esses três tipos com valores diferentes.
+
+Inclua dados de dez profissionais de enfermaria. Associe cada internação a ao menos dois enfermeiros.
+
+Os dados de tipo de quarto, convênio e especialidade são essenciais para a operação do sistema e, portanto, devem ser povoados assim que o sistema for instalado.
+
+<h4>Resultado</h4>
 ```
 DROP DATABASE IF EXISTS Hospital;
 CREATE DATABASE IF NOT EXISTS Hospital;
@@ -237,5 +254,8 @@ VALUES ('2023-09-20', '2023-12-25','Cirurgia para retirar retina.', 1,'555444','
 ('2022-02-10', '2022-03-15', 'Internação para desidratação.', 3, '555444', '38Q91R'),
 ('2022-03-05', '2022-04-10', 'Avaliação cardíaca.', 2, '678345', '47Q397'),
 ('2022-04-01', '2022-05-05', 'Recuperação pós-cirúrgica.', 4, '839102', '362R49');
-```
 
+SELECT * FROM Paciente;
+SELECT * FROM Associacao_Medico_Especialidade;
+
+```
