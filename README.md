@@ -13,6 +13,7 @@ Bem-vindo ao centro de organização da migração dos dados do Hospital Albert 
 ## 3. Terceira Migração
 
 <img src="TerceiraMigracao/Diagrama-MER-Hospital.png" style="width: 100%" alt="Terceira Migração de Dados">
+
 ```
 DROP DATABASE IF EXISTS Hospital;
 CREATE DATABASE IF NOT EXISTS Hospital;
