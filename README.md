@@ -240,3 +240,17 @@ VALUES ('2023-09-20', '2023-12-25','Cirurgia para retirar retina.', 1,'555444','
 ('2022-04-01', '2022-05-05', 'Recuperação pós-cirúrgica.', 4, '839102', '362R49');
 ```
 
+## 4. Quarta Migração
+
+<img src="QuartaMigracao/Diagrama-MER-Hospital.png" style="width: 100%" alt="Quarta Migração de Dados">
+
+```
+USE Hospital;
+
+ALTER TABLE Medico ADD COLUMN em_atividade bool NOT NULL DEFAULT true;
+
+UPDATE Medico SET em_atividade = false WHERE id = '123456';
+UPDATE Medico SET em_atividade = false WHERE id = '678368';
+
+SELECT * FROM Medico;
+```
