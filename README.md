@@ -55,10 +55,10 @@ CREATE TABLE IF NOT EXISTS Medico (
 
 CREATE TABLE IF NOT EXISTS Associacao_Medico_Especialidade (
 	medico Varchar(6),
-    especialidade BIGINT UNSIGNED,
-    PRIMARY KEY (medico, especialidade), -- Força a unicidade de uma associação ser apenas se for o mesmo medico e especialidade id 
-    FOREIGN KEY (especialidade) REFERENCES Especialidade(id),
-    FOREIGN KEY (medico) REFERENCES Medico(id)
+    	especialidade BIGINT UNSIGNED,
+    	PRIMARY KEY (medico, especialidade), -- Força a unicidade de uma associação ser apenas se for o mesmo medico e especialidade id 
+    	FOREIGN KEY (especialidade) REFERENCES Especialidade(id),
+    	FOREIGN KEY (medico) REFERENCES Medico(id)
 );
 
 CREATE TABLE IF NOT EXISTS Consulta (
@@ -111,10 +111,10 @@ CREATE TABLE IF NOT EXISTS Internacao (
 
 CREATE TABLE IF NOT EXISTS Associacao_Internacao_Enfermeiro (
 	enfermeiro Varchar(6),
-    internacao BIGINT UNSIGNED,
-    PRIMARY KEY (enfermeiro, internacao),
-    FOREIGN KEY (enfermeiro) REFERENCES Enfermeiro(id),
-    FOREIGN KEY (internacao) REFERENCES Internacao(id)
+    	internacao BIGINT UNSIGNED,
+    	PRIMARY KEY (enfermeiro, internacao),
+    	FOREIGN KEY (enfermeiro) REFERENCES Enfermeiro(id),
+    	FOREIGN KEY (internacao) REFERENCES Internacao(id)
 );
 
 INSERT INTO Especialidade (nome) 
